@@ -323,3 +323,11 @@ input:focus {
   border: none;
   cursor: pointer;
 }
+.logo {
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
