@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-/* Header + nav (your second file) */
+
 header {
   background: black;
   padding: 15px;
@@ -32,7 +32,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero (from your first file) */
+
 .hero {
   background:
     linear-gradient(
@@ -87,7 +87,7 @@ nav a:hover {
   height: auto;
 }
 
-/* Simple page sections */
+
 .section {
   background: #1c1c1c;
   padding: 20px;
@@ -96,7 +96,7 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* News list */
+
 .news-item {
   padding: 15px;
   border-radius: 6px;
@@ -112,7 +112,7 @@ nav a:hover {
   color: #aaa;
 }
 
-/* Login */
+
 .form-box {
   max-width: 420px;
   margin: 30px auto;
