@@ -1,0 +1,1 @@
+Ky eshte projekti nga Gent Sherifi dhe Endi Bytyqi ne lenden "Dizajni dhe Zhvillimi i Uebit". Deri me tani eshte punuar vetem faza e pare e projektit me disa faqe dhe javascript bazik vetem per alerts.
