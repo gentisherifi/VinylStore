@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Vinyl Store - Shop</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2><a href="index.html" class="logo">VinylStore</a></h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Shop Rock Vinyl</h1>
+    <p style="margin-top: 10px; color:#aaa;">
+      Browse classic rock albums and add your favorites to the cart (demo UI).
+    </p>
+
+    <div class="shop-grid">
+ 
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=60" alt="Rock vinyl" />
+        <h3>Classic Rock Essentials</h3>
+        <p class="meta">Compilation</p>
+        <p class="price">€24.99</p>
+        <button class="btn buy-btn">Add to Cart</button>
+      </div>
+
+     
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1516981442399-a91139e20ff8?auto=format&fit=crop&w=1200&q=60" alt="Vinyl record store" />
+        <h3>Rock Anthems</h3>
+        <p class="meta">Limited Edition</p>
+        <p class="price">€29.99</p>
+        <button class="btn buy-btn">Add to Cart</button>
+      </div>
+
+ 
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=1200&q=60" alt="Turntable" />
+        <h3>Golden Era Rock</h3>
+        <p class="meta">Remastered</p>
+        <p class="price">€27.50</p>
+        <button class="btn buy-btn">Add to Cart</button>
+      </div>
+
+      
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1458560871784-56d23406c091?auto=format&fit=crop&w=1200&q=60" alt="Vinyl record closeup" />
+        <h3>Stadium Rock Hits</h3>
+        <p class="meta">New Arrival</p>
+        <p class="price">€22.99</p>
+        <button class="btn buy-btn">Add to Cart</button>
+      </div>
+
+   
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1521337581100-8ca9a73a5f79?auto=format&fit=crop&w=1200&q=60" alt="Record player and vinyl" />
+        <h3>Rock Legends</h3>
+        <p class="meta">Collector’s Pick</p>
+        <p class="price">€34.99</p>
+        <button class="btn buy-btn">Add to Cart</button>
+      </div>
+
+      
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1461783436728-0a921771469c?auto=format&fit=crop&w=1200&q=60" alt="Vinyl records stack" />
+        <h3>Garage Rock Classics</h3>
+        <p class="meta">Best Seller</p>
+        <p class="price">€19.99</p>
+        <button class="btn buy-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
