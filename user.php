@@ -8,24 +8,37 @@ class User {
     }
 
     public function register($name, $surname, $email, $password) {
-        $stmt = $this->conn->prepare(
-            "INSERT INTO {$this->table} (name,surname,email,password) VALUES (:name,:surname,:email,:password)"
-        );
-        $hashed = password_hash($password, PASSWORD_DEFAULT);
-        $stmt->bindParam(':name',$name);
-        $stmt->bindParam(':surname',$surname);
-        $stmt->bindParam(':email',$email);
-        $stmt->bindParam(':password',$hashed);
-        return $stmt->execute();
+        try {
+            $stmt = $this->conn->prepare(
+                "INSERT INTO {$this->table} (name, surname, email, password) 
+                 VALUES (:name, :surname, :email, :password)"
+            );
+            
+            $hashed = password_hash($password, PASSWORD_DEFAULT);
+            
+            $stmt->bindParam(':name', $name);
+            $stmt->bindParam(':surname', $surname);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':password', $hashed);
+            
+            return $stmt->execute();
+        } catch (PDOException $e) {
+            // Email already exists or other error
+            return false;
+        }
     }
 
     public function login($email, $password) {
-        $stmt = $this->conn->prepare("SELECT * FROM {$this->table} WHERE email=:email LIMIT 1");
-        $stmt->bindParam(":email",$email);
+        $stmt = $this->conn->prepare(
+            "SELECT * FROM {$this->table} WHERE email = :email LIMIT 1"
+        );
+        $stmt->bindParam(":email", $email);
         $stmt->execute();
+
         if ($stmt->rowCount() == 1) {
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
-            if (password_verify($password,$user['password'])) {
+            
+            if (password_verify($password, $user['password'])) {
                 session_start();
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['email'] = $user['email'];
