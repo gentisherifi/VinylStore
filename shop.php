@@ -1,24 +1,32 @@
+
+  <?php
+include "db.php";
+$db = new Database();
+$conn = $db->getConnection();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
-  <title>Vinyl Store - Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<title>Vinyl Store - Shop</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <h2><a href="index.html" class="logo">VinylStore</a></h2>
-      <div>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="login.html">Login</a>
-      </div>
-    </nav>
-  </header>
+<header>
+<nav>
+<h2><a href="index.php" class="logo">VinylStore</a></h2>
+<div>
+<a href="index.php">Home</a>
+<a href="shop.php">Shop</a>
+<a href="about.php">About</a>
+<a href="news.php">News</a>
+<a href="login.php">Login</a>
+</div>
+</nav>
+</header>
+
 
   <div class="container">
     <h1>Shop Rock Vinyl</h1>
