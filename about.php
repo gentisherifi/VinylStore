@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+include "db.php";
+$db = new Database();
+$conn = $db->getConnection();
+?>
+
+!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,12 +16,12 @@
 <body>
   <header>
     <nav>
-      <h2><a href="index.html" class="logo">VinylStore</a></h2>
+      <h2><a href="index.php" class="logo">VinylStore</a></h2>
       <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="login.html">Login</a>
+        <a href="index.php">Home</a>
+        <a href="about.php">About</a>
+        <a href="news.php">News</a>
+        <a href="login.php">Login</a>
       </div>
     </nav>
   </header>
