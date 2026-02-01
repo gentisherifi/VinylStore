@@ -5,7 +5,7 @@ $db = new Database();
 $conn = $db->getConnection();
 ?>
 
-!DOCTYPE html>
+
 
 <html lang="en">
 <head>
