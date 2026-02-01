@@ -42,7 +42,7 @@ $news = $conn->query(
         <div class="grid">
             <a href="shop.php" class="card-link">
                 <div class="card">
-                    <img src="images/rockvinyl.png" alt="Rock Collection" />
+                    <img src="images/rockclasic.jpg" alt="Rock Collection" />
                     <h3>Rock Collection</h3>
                 </div>
             </a>

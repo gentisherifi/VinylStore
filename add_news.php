@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </header>
 
     <div class="container">
-        <h1>Add News Article</h1>
+        <h1>Add Article</h1>
 
         <?php if ($message): ?>
             <div class="section" style="background: <?= strpos($message, 'success') !== false ? '#2a5a2a' : '#5a2a2a' ?>;">
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <label for="image_url">Image URL (optional)</label>
                 <input id="image_url" name="image_url" type="url" 
-                       placeholder="https://images.unsplash.com/..." />
+                       placeholder="image link address here" />
 
                 <button class="btn btn-full" type="submit">Publish Article</button>
             </form>
